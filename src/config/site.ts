@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "RF Group of Companies",
   shortName: "RF Group",
-  logo: "/Logo rfgoc.png",
+  logo: "/Logo_rfgoc.png",
   favicon: "/fav.png",
   domain: "rfgroupofcompanies.com",
   url: "https://rfgroupofcompanies.com",
