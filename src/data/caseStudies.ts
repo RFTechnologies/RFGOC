@@ -7,7 +7,7 @@ export const caseStudies: CaseStudy[] = [
     companySlug: "technologies",
     summary:
       "Engineered multi-tenant cloud architecture, automated payment gateways, and real-time event booking engines for digital platforms.",
-    body: "RF Technologies designed and deployed scalable microservices, zero-trust security compliance, and cloud infrastructure powering products such as EazyTicks, EZFundrazr, Spotly, and Chefington.",
+    body: "RF Technologies designed and deployed scalable microservices, zero-trust security compliance, and cloud infrastructure powering products such as EazyTicks, EZFundrazr, spotlyy, and Chefington.",
     link: "https://eazyticks.com/",
     status: "approved",
   },

@@ -9,7 +9,7 @@ interface ThemeToggleProps {
 }
 
 export const ThemeToggle: React.FC<ThemeToggleProps> = ({ className }) => {
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [theme, setTheme] = useState<"dark" | "light">("light");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -20,8 +20,10 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({ className }) => {
       document.documentElement.classList.remove("dark", "light");
       document.documentElement.classList.add(savedTheme);
     } else {
-      // Default to dark mode for corporate identity
-      document.documentElement.classList.add("dark");
+      // Default to light mode
+      setTheme("light");
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
     }
   }, []);
 

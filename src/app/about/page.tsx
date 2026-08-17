@@ -165,12 +165,12 @@ export default function AboutPage() {
               <div className="flex items-start gap-5">
                 <div className="w-16 h-16 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center p-2 shrink-0">
                   <Image
-                    src="/Rf Architects white-logo.png"
+                    src="/Rf Architects dark-logo.png"
                     alt="RF Architects Logo"
                     width={48}
                     height={48}
                     style={{ width: "auto", height: "auto" }}
-                    className="max-h-12 max-w-12 object-contain"
+                    className="max-h-12 max-w-12 object-contain dark:invert"
                     unoptimized
                   />
                 </div>

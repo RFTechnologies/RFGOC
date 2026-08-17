@@ -24,8 +24,8 @@ export const portfolioProjects: PortfolioProject[] = [
     status: "approved",
   },
   {
-    id: "spotly",
-    name: "Spotly",
+    id: "spotlyy",
+    name: "spotlyy",
     companySlug: "technologies",
     summary:
       "Location-based discovery system and mobile application delivering real-time event mapping, local venue recommendations, and interactive community engagement.",

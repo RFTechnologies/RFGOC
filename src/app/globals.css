@@ -2,20 +2,6 @@
 
 :root {
   --color-primary: #0029B4;
-  --bg-primary: #07090e;
-  --bg-surface: #0f141c;
-  --bg-card: #161e2b;
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(0, 41, 180, 0.25);
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --accent-cyan: #0029B4;
-  --accent-indigo: #3b82f6;
-}
-
-html.light {
-  --color-primary: #0029B4;
   --bg-primary: #f8fafc;
   --bg-surface: #ffffff;
   --bg-card: #ffffff;
@@ -30,6 +16,17 @@ html.light {
 }
 
 html.dark {
+  --color-primary: #0029B4;
+  --bg-primary: #07090e;
+  --bg-surface: #0f141c;
+  --bg-card: #161e2b;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 41, 180, 0.25);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent-cyan: #0029B4;
+  --accent-indigo: #3b82f6;
   color-scheme: dark;
 }
 
@@ -62,95 +59,153 @@ body {
 
 /* Glassmorphism & Surface Utilities */
 .glass-panel {
-  background: rgba(15, 20, 28, 0.75);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border-subtle);
-}
-
-.glass-card {
-  background: rgba(22, 30, 43, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--border-subtle);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.glass-card:hover {
-  border-color: rgba(56, 189, 248, 0.3);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px rgba(56, 189, 248, 0.15);
-}
-
-/* Light Mode Specific Overrides */
-html.light body {
-  background-color: #f8fafc;
-  color: #0f172a;
-}
-
-html.light .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
 }
 
-html.light .glass-card {
+.glass-card {
   background: #ffffff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-html.light .glass-card:hover {
+.glass-card:hover {
   border-color: rgba(2, 132, 199, 0.3);
   box-shadow: 0 12px 32px -10px rgba(15, 23, 42, 0.1), 0 0 20px -5px rgba(2, 132, 199, 0.12);
 }
 
-html.light .text-gradient {
+/* Dark Mode Utilities */
+html.dark .glass-panel {
+  background: rgba(15, 20, 28, 0.75);
+  border: 1px solid var(--border-subtle);
+  box-shadow: none;
+}
+
+html.dark .glass-card {
+  background: rgba(22, 30, 43, 0.6);
+  border: 1px solid var(--border-subtle);
+  box-shadow: none;
+}
+
+html.dark .glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px rgba(56, 189, 248, 0.15);
+}
+
+/* Light Mode (Default) Specific Overrides */
+html:not(.dark) body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html:not(.dark) .text-gradient {
   background: linear-gradient(135deg, #0f172a 0%, #334155 50%, #475569 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-html.light .text-gradient-accent {
-  background: linear-gradient(135deg, #0f172a 0%, #0284c7 50%, #4f46e5 100%);
+html:not(.dark) .text-gradient-accent {
+  background: linear-gradient(135deg, #0f172a 0%, #0029B4 50%, #1d4ed8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-html.light .bg-ambient-grid {
+html:not(.dark) .bg-ambient-grid {
   background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
 }
 
-html.light header {
+html:not(.dark) header {
   background-color: rgba(248, 250, 252, 0.85) !important;
   border-bottom-color: rgba(15, 23, 42, 0.08) !important;
 }
 
-html.light footer {
+html:not(.dark) footer {
   background-color: #f1f5f9 !important;
   border-top-color: rgba(15, 23, 42, 0.08) !important;
 }
 
 /* Light mode text color adjustments for slate text */
-html.light .text-white {
+html:not(.dark) .text-white {
   color: #0f172a !important;
 }
 
-html.light .text-slate-100,
-html.light .text-slate-200,
-html.light .text-slate-300 {
+html:not(.dark) .text-slate-100,
+html:not(.dark) .text-slate-200,
+html:not(.dark) .text-slate-300 {
   color: #334155 !important;
 }
 
-html.light .text-slate-400 {
+html:not(.dark) .text-slate-400 {
   color: #64748b !important;
 }
 
-html.light .bg-\[\#040609\],
-html.light .bg-\[\#07090E\],
-html.light .bg-\[\#0B0F19\],
-html.light .bg-\[\#0B0F19\]\/80,
-html.light .bg-\[\#0B0F19\]\/90 {
+html:not(.dark) .bg-\[\#040609\],
+html:not(.dark) .bg-\[\#07090E\],
+html:not(.dark) .bg-\[\#0B0F19\],
+html:not(.dark) .bg-\[\#0B0F19\]\/80,
+html:not(.dark) .bg-\[\#0B0F19\]\/90 {
   background-color: #f1f5f9 !important;
+}
+
+/* Light Mode Primary Color Overrides (#0029B4) */
+html:not(.dark) .text-sky-300,
+html:not(.dark) .text-sky-400,
+html:not(.dark) .text-sky-500,
+html:not(.dark) .text-sky-600,
+html:not(.dark) .text-sky-200 {
+  color: #0029B4 !important;
+}
+
+html:not(.dark) .bg-sky-400,
+html:not(.dark) .bg-sky-500,
+html:not(.dark) .bg-sky-600 {
+  background-color: #0029B4 !important;
+  color: #ffffff !important;
+}
+
+html:not(.dark) .bg-sky-500\/10,
+html:not(.dark) .bg-sky-500\/15,
+html:not(.dark) .bg-sky-500\/20,
+html:not(.dark) .bg-sky-400\/10 {
+  background-color: rgba(0, 41, 180, 0.08) !important;
+}
+
+html:not(.dark) .border-sky-400,
+html:not(.dark) .border-sky-500,
+html:not(.dark) .border-sky-500\/20,
+html:not(.dark) .border-sky-500\/30,
+html:not(.dark) .border-sky-500\/40 {
+  border-color: rgba(0, 41, 180, 0.25) !important;
+}
+
+html:not(.dark) .from-sky-400,
+html:not(.dark) .from-sky-500 {
+  --tw-gradient-from: #0029B4 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(0, 41, 180, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-from), var(--tw-gradient-to)) !important;
+}
+
+html:not(.dark) .to-indigo-500,
+html:not(.dark) .to-blue-600 {
+  --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position) !important;
+}
+
+html:not(.dark) .shadow-sky-400\/20,
+html:not(.dark) .shadow-sky-400\/30 {
+  box-shadow: 0 10px 25px -5px rgba(0, 41, 180, 0.25) !important;
+}
+
+html:not(.dark) .hover\:text-sky-300:hover,
+html:not(.dark) .hover\:text-sky-200:hover,
+html:not(.dark) .group:hover .group-hover\:text-sky-300,
+html:not(.dark) .group:hover .group-hover\:text-sky-400 {
+  color: #0029B4 !important;
 }
 
 /* Container & Rhythm Tokens */

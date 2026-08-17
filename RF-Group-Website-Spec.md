@@ -189,7 +189,7 @@ Form with `interestedIn` selector (RF Technologies / RF Media Productions / RF A
 ## 9. Content & Copy Rules (important — read before generating any text)
 
 - **Do not invent final marketing copy, taglines, or case study content.** Use clearly-labeled placeholder text (e.g. `[PLACEHOLDER: Group tagline]`).
-- **Never use real project/client names as filler unless already explicitly approved** (eazyticks, EZFundrazr, Spotly, Chefington, Miles & Meals are named in planning docs but are *not* approved for publishing — use fake placeholder names in code/content until marked `approved` in the data model).
+- **Never use real project/client names as filler unless already explicitly approved** (eazyticks, EZFundrazr, spotlyy, Chefington, Miles & Meals are named in planning docs but are *not* approved for publishing — use fake placeholder names in code/content until marked `approved` in the data model).
 - Avoid grandiose language ("empire," etc.) — tone should read credible and ambitious, not hype-driven.
 
 ---

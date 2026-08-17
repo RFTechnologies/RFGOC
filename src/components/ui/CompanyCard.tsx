@@ -41,7 +41,10 @@ export const CompanyCard: React.FC<CompanyCardProps> = ({ company, index }) => {
                 width={160}
                 height={50}
                 style={{ width: "auto", height: "auto" }}
-                className="max-h-12 w-auto max-w-[160px] object-contain group-hover:scale-105 transition-transform duration-300"
+                className={cn(
+                  "max-h-12 w-auto max-w-[160px] object-contain group-hover:scale-105 transition-transform duration-300",
+                  company.slug === "architects" && "dark:invert"
+                )}
                 unoptimized
               />
             ) : (
@@ -58,7 +61,7 @@ export const CompanyCard: React.FC<CompanyCardProps> = ({ company, index }) => {
           <h3 className="text-2xl font-bold tracking-tight text-white group-hover:text-sky-200 transition-colors">
             {company.name}
           </h3>
-          <p className="text-xs font-semibold uppercase tracking-widest text-sky-400/90">
+          <p className="text-xs font-semibold uppercase tracking-widest text-blue-400/90">
             {company.tagline}
           </p>
         </div>

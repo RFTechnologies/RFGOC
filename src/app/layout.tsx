@@ -75,7 +75,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" className="light" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -83,7 +83,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="bg-[#07090E] text-slate-100 min-h-screen flex flex-col antialiased selection:bg-sky-500/30 selection:text-sky-200"
+        className="bg-[#f8fafc] text-slate-900 min-h-screen flex flex-col antialiased selection:bg-blue-500/20 selection:text-blue-900"
         suppressHydrationWarning
       >
         <Header />

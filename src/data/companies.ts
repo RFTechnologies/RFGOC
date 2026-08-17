@@ -83,7 +83,9 @@ export const companies: Company[] = [
     slug: "architects",
     name: "RF Architects",
     tagline: "Architecture & Interior Design",
-    logoUrl: "/Rf Architects white-logo.png",
+    logoUrl: "/Rf Architects dark-logo.png",
+    logoDark: "/Rf Architects white-logo.png",
+    logoLight: "/Rf Architects dark-logo.png",
     websiteUrl: "https://rf-architects.vercel.app/",
     cardDescription:
       "Creating visionary spatial design, sustainable commercial architecture, master planning, and luxury interior environments.",

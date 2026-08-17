@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { cn } from "@/lib/utils";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { PortfolioCard } from "@/components/ui/PortfolioCard";
 import { ContactForm } from "@/components/ui/ContactForm";
@@ -119,7 +120,10 @@ export default async function CompanyPage({ params }: PageProps) {
                     width={64}
                     height={64}
                     style={{ width: "auto", height: "auto" }}
-                    className="max-h-14 max-w-14 object-contain"
+                    className={cn(
+                      "max-h-14 max-w-14 object-contain",
+                      company.slug === "architects" && "dark:invert"
+                    )}
                     priority
                     unoptimized
                   />

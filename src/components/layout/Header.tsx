@@ -13,7 +13,7 @@ import { Menu, X, ArrowUpRight, Shield } from "lucide-react";
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [theme, setTheme] = useState<"dark" | "light">("light");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
     };
 
     const syncTheme = () => {
-      const nextTheme = document.documentElement.classList.contains("light") ? "light" : "dark";
+      const nextTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
       setTheme(nextTheme);
     };
 

@@ -32,6 +32,8 @@ export type Company = {
   name: string;
   tagline: string;
   logoUrl?: string;
+  logoDark?: string;
+  logoLight?: string;
   websiteUrl?: string;
   cardDescription: string;
   heroDescription: string;
