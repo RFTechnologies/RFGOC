@@ -35,7 +35,7 @@ export default function PortfolioPage() {
             Selected Group Portfolio
           </h1>
           <p className="text-slate-400 text-sm md:text-base leading-relaxed">
-            Explore curated work across RF Technologies, RF Media Productions, and RF Architects. All unapproved work is strictly gated under placeholder flags per corporate governance.
+            Discover live products, SaaS platforms, original media series, and architectural designs delivered by our operating companies.
           </p>
         </div>
 

@@ -23,6 +23,7 @@ export type CaseStudy = {
   companySlug: "technologies" | "media-productions" | "architects" | string;
   summary: string;
   body: string;
+  link?: string;
   status: ContentStatus;
 };
 

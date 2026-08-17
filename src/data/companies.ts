@@ -7,6 +7,7 @@ export const companies: Company[] = [
     slug: "technologies",
     name: "RF Technologies",
     tagline: "Technology & Business Solutions",
+    logoUrl: "/Rf Technologies Logo.png",
     websiteUrl: "https://rftechnologies.com.pk",
     cardDescription:
       "Delivering high-performance software engineering, enterprise cloud solutions, AI integration, and digital transformation strategy.",
@@ -37,13 +38,14 @@ export const companies: Company[] = [
     selectedWork: portfolioProjects.filter((p) => p.companySlug === "technologies"),
     caseStudies: caseStudies.filter((c) => c.companySlug === "technologies"),
     contactCtaLabel: "Inquire About Technology Solutions",
-    status: "draft",
+    status: "approved",
     accentColor: "from-sky-400 to-blue-600",
   },
   {
     slug: "media-productions",
     name: "RF Media Productions",
     tagline: "Media & Content Production",
+    logoUrl: "/Rf Media Production Logo.png",
     websiteUrl: "https://rfmediaproductions.com",
     cardDescription:
       "Crafting compelling visual stories, commercial cinematography, brand documentaries, and high-impact digital media production.",
@@ -74,13 +76,14 @@ export const companies: Company[] = [
     selectedWork: portfolioProjects.filter((p) => p.companySlug === "media-productions"),
     caseStudies: caseStudies.filter((c) => c.companySlug === "media-productions"),
     contactCtaLabel: "Inquire About Production Services",
-    status: "draft",
+    status: "approved",
     accentColor: "from-indigo-400 to-purple-600",
   },
   {
     slug: "architects",
     name: "RF Architects",
     tagline: "Architecture & Interior Design",
+    logoUrl: "/Rf Architects white-logo.png",
     websiteUrl: "https://rf-architects.vercel.app/",
     cardDescription:
       "Creating visionary spatial design, sustainable commercial architecture, master planning, and luxury interior environments.",
@@ -111,7 +114,7 @@ export const companies: Company[] = [
     selectedWork: portfolioProjects.filter((p) => p.companySlug === "architects"),
     caseStudies: caseStudies.filter((c) => c.companySlug === "architects"),
     contactCtaLabel: "Inquire About Architectural Design",
-    status: "draft",
+    status: "approved",
     accentColor: "from-emerald-400 to-teal-600",
   },
 ];

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Company } from "@/types";
 import { PlaceholderBadge } from "./PlaceholderBadge";
 import { ArrowUpRight, Code2, Film, Building2, CheckCircle2 } from "lucide-react";
@@ -27,15 +28,27 @@ export const CompanyCard: React.FC<CompanyCardProps> = ({ company, index }) => {
       <div className="absolute -right-16 -top-16 w-48 h-48 bg-sky-500/5 rounded-full blur-3xl group-hover:bg-sky-500/10 transition-colors duration-500 pointer-events-none" />
 
       <div>
-        {/* Card Header: Numbered Index + Icon + Badge */}
+        {/* Card Header: Numbered Index + Full Company Logo + Badge */}
         <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <span className="text-3xl font-black text-slate-500/60 font-mono tracking-tighter group-hover:text-sky-400/80 transition-colors">
               {numberFormatted}
             </span>
-            <div className="w-12 h-12 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300">
-              {iconMap[company.slug] || <Code2 className="w-6 h-6 text-sky-400" />}
-            </div>
+            {company.logoUrl ? (
+              <Image
+                src={company.logoUrl}
+                alt={`${company.name} Logo`}
+                width={160}
+                height={50}
+                style={{ width: "auto", height: "auto" }}
+                className="max-h-12 w-auto max-w-[160px] object-contain group-hover:scale-105 transition-transform duration-300"
+                unoptimized
+              />
+            ) : (
+              <div className="w-12 h-12 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center">
+                {iconMap[company.slug] || <Code2 className="w-6 h-6 text-sky-400" />}
+              </div>
+            )}
           </div>
           <PlaceholderBadge status={company.status} />
         </div>

@@ -1,29 +1,31 @@
 @import "tailwindcss";
 
 :root {
+  --color-primary: #0029B4;
   --bg-primary: #07090e;
   --bg-surface: #0f141c;
   --bg-card: #161e2b;
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(56, 189, 248, 0.2);
+  --border-glow: rgba(0, 41, 180, 0.25);
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  --accent-cyan: #38bdf8;
-  --accent-indigo: #818cf8;
+  --accent-cyan: #0029B4;
+  --accent-indigo: #3b82f6;
 }
 
 html.light {
+  --color-primary: #0029B4;
   --bg-primary: #f8fafc;
   --bg-surface: #ffffff;
   --bg-card: #ffffff;
   --border-subtle: rgba(15, 23, 42, 0.08);
-  --border-glow: rgba(2, 132, 199, 0.2);
+  --border-glow: rgba(0, 41, 180, 0.2);
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #64748b;
-  --accent-cyan: #0284c7;
-  --accent-indigo: #4f46e5;
+  --accent-cyan: #0029B4;
+  --accent-indigo: #1d4ed8;
   color-scheme: light;
 }
 
@@ -32,6 +34,7 @@ html.dark {
 }
 
 @theme {
+  --color-primary: var(--color-primary);
   --color-dark-base: var(--bg-primary);
   --color-dark-surface: var(--bg-surface);
   --color-dark-card: var(--bg-card);

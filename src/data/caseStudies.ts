@@ -3,29 +3,32 @@ import { CaseStudy } from "@/types";
 export const caseStudies: CaseStudy[] = [
   {
     id: "cs-tech-1",
-    title: "[PLACEHOLDER: Modernizing Enterprise Data Pipelines]",
+    title: "High-Throughput SaaS & Ticketing Infrastructure",
     companySlug: "technologies",
     summary:
-      "[PLACEHOLDER: Case study examining cloud migration, real-time analytics, and zero-trust security infrastructure.]",
-    body: "[PLACEHOLDER: Full case study MDX body content pending client approval.]",
-    status: "placeholder",
+      "Engineered multi-tenant cloud architecture, automated payment gateways, and real-time event booking engines for digital platforms.",
+    body: "RF Technologies designed and deployed scalable microservices, zero-trust security compliance, and cloud infrastructure powering products such as EazyTicks, EZFundrazr, Spotly, and Chefington.",
+    link: "https://eazyticks.com/",
+    status: "approved",
   },
   {
     id: "cs-media-1",
-    title: "[PLACEHOLDER: Cross-Continent Brand Narrative Campaign]",
+    title: "Cinematic Travel & Culinary Series Production",
     companySlug: "media-productions",
     summary:
-      "[PLACEHOLDER: Case study on international multi-camera production, post-production VFX, and sound design.]",
-    body: "[PLACEHOLDER: Full case study MDX body content pending client approval.]",
-    status: "placeholder",
+      "Full-scope film production, 4K multi-camera cinematography, sound engineering, and post-production color grading.",
+    body: "RF Media Productions directed end-to-end filming and post-production for original digital series including Miles & Meals, managing location scouting, cinematic storytelling, and digital content distribution.",
+    link: "https://mealsandmiles.com/",
+    status: "approved",
   },
   {
     id: "cs-arch-1",
-    title: "[PLACEHOLDER: Net-Zero Carbon Urban Commercial Tower]",
+    title: "Sustainable Net-Zero Commercial Campus Design",
     companySlug: "architects",
     summary:
-      "[PLACEHOLDER: Detailed architectural breakdown of parametric solar shading, structural efficiency, and luxury interior design.]",
-    body: "[PLACEHOLDER: Full case study MDX body content pending client approval.]",
-    status: "placeholder",
+      "Integrated spatial planning, biophilic indoor environments, and LEED-certified energy modeling for modern commercial towers.",
+    body: "RF Architects conceptualized a state-of-the-art corporate complex incorporating parametric solar shading, high-efficiency building envelopes, and biophilic executive office interiors.",
+    link: "https://rf-architects.vercel.app/",
+    status: "approved",
   },
 ];

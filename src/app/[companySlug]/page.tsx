@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { PortfolioCard } from "@/components/ui/PortfolioCard";
@@ -110,8 +111,21 @@ export default async function CompanyPage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-8 space-y-6">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-2xl bg-white/[0.05] border border-white/10 flex items-center justify-center shadow-lg">
-                {iconMap[company.slug] || <Code2 className="w-8 h-8 text-sky-400" />}
+              <div className="w-20 h-20 rounded-2xl bg-white/[0.05] border border-white/10 flex items-center justify-center p-3 shadow-lg">
+                {company.logoUrl ? (
+                  <Image
+                    src={company.logoUrl}
+                    alt={`${company.name} Logo`}
+                    width={64}
+                    height={64}
+                    style={{ width: "auto", height: "auto" }}
+                    className="max-h-14 max-w-14 object-contain"
+                    priority
+                    unoptimized
+                  />
+                ) : (
+                  iconMap[company.slug] || <Code2 className="w-8 h-8 text-sky-400" />
+                )}
               </div>
               <div>
                 <span className="text-xs font-bold uppercase tracking-widest text-sky-400 block">
@@ -411,14 +425,35 @@ export default async function CompanyPage({ params }: PageProps) {
               {company.caseStudies.map((cs) => (
                 <div
                   key={cs.id}
-                  className="glass-card rounded-xl p-6 border border-white/10 space-y-4"
+                  className="glass-card rounded-xl p-6 border border-white/10 flex flex-col justify-between space-y-4 group hover:border-sky-500/30 transition-all"
                 >
-                  <div className="flex items-center justify-between">
-                    <FileText className="w-5 h-5 text-indigo-400" />
-                    <PlaceholderBadge status={cs.status} />
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <FileText className="w-5 h-5 text-indigo-400" />
+                      <PlaceholderBadge status={cs.status} />
+                    </div>
+                    <h3 className="text-lg font-bold text-white group-hover:text-sky-300 transition-colors">
+                      {cs.title}
+                    </h3>
+                    <p className="text-slate-400 text-xs leading-relaxed">{cs.summary}</p>
                   </div>
-                  <h3 className="text-lg font-bold text-white">{cs.title}</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">{cs.summary}</p>
+                  
+                  {cs.link && (
+                    <div className="pt-3 border-t border-white/10 flex items-center justify-between">
+                      <span className="text-[11px] font-mono text-slate-400">
+                        {new URL(cs.link).hostname.replace("www.", "")}
+                      </span>
+                      <a
+                        href={cs.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 hover:bg-sky-500/20 text-xs font-semibold text-sky-300 transition-all group/link"
+                      >
+                        Visit Live Site
+                        <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                      </a>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

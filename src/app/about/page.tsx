@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { siteConfig } from "@/config/site";
 import { Shield, Target, Compass, ArrowRight, ArrowUpRight, Layers, Award } from "lucide-react";
@@ -25,7 +26,7 @@ export default function AboutPage() {
             Architecting Sustainable Value Across Industries
           </h1>
           <p className="text-slate-300 text-base md:text-xl font-normal leading-relaxed max-w-3xl">
-            [PLACEHOLDER: RF Group of Companies was founded to unite domain-leading capabilities under a single parent entity. We provide strategic capital, governance, and operational support to our subsidiary businesses.]
+            RF Group of Companies unites specialized enterprise capabilities under a unified parent corporation. We provide strategic stewardship, technical infrastructure, and capital to empower our operating subsidiaries across Technology, Media Productions, and Architecture.
           </p>
         </div>
       </SectionWrapper>
@@ -39,7 +40,7 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-bold text-white">Core Mission</h3>
             <p className="text-slate-400 text-xs leading-relaxed">
-              [PLACEHOLDER: To pioneer transformative solutions in technology, creative media, and architectural design through disciplined execution and continuous innovation.]
+              To pioneer high-impact solutions across technology platforms, cinematic media productions, and visionary commercial architecture through disciplined execution and continuous innovation.
             </p>
           </div>
 
@@ -49,7 +50,7 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-bold text-white">Strategic Governance</h3>
             <p className="text-slate-400 text-xs leading-relaxed">
-              [PLACEHOLDER: Providing executive stewardship while ensuring subsidiary management teams possess full operational autonomy in their respective verticals.]
+              Providing executive leadership and shared group resources while ensuring subsidiary management teams maintain operational autonomy in their respective industries.
             </p>
           </div>
 
@@ -59,7 +60,7 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-bold text-white">Operational Excellence</h3>
             <p className="text-slate-400 text-xs leading-relaxed">
-              [PLACEHOLDER: Maintaining rigorous quality benchmarks, transparent reporting, and international compliance standards across all division workflows.]
+              Maintaining rigorous performance benchmarks, transparent reporting, and international quality standards across all subsidiary projects and client deliverables.
             </p>
           </div>
         </div>
@@ -79,14 +80,27 @@ export default function AboutPage() {
 
           <div className="space-y-6">
             <div className="glass-card rounded-2xl p-8 border border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div className="space-y-2">
-                <span className="text-xs font-bold text-sky-400 uppercase tracking-widest">
-                  Division 01 — Technology Solutions
-                </span>
-                <h3 className="text-2xl font-bold text-white">RF Technologies</h3>
-                <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
-                  Enterprise cloud infrastructure, bespoke software development, AI automation, and technical strategy consulting.
-                </p>
+              <div className="flex items-start gap-5">
+                <div className="w-16 h-16 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center p-2 shrink-0">
+                  <Image
+                    src="/Rf Technologies Logo.png"
+                    alt="RF Technologies Logo"
+                    width={48}
+                    height={48}
+                    style={{ width: "auto", height: "auto" }}
+                    className="max-h-12 max-w-12 object-contain"
+                    unoptimized
+                  />
+                </div>
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-sky-400 uppercase tracking-widest">
+                    Division 01 — Technology Solutions
+                  </span>
+                  <h3 className="text-2xl font-bold text-white">RF Technologies</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
+                    Enterprise cloud infrastructure, bespoke software development, AI automation, and technical strategy consulting.
+                  </p>
+                </div>
               </div>
               <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
                 <Link
@@ -107,14 +121,27 @@ export default function AboutPage() {
             </div>
 
             <div className="glass-card rounded-2xl p-8 border border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div className="space-y-2">
-                <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest">
-                  Division 02 — Media & Content
-                </span>
-                <h3 className="text-2xl font-bold text-white">RF Media Productions</h3>
-                <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
-                  Cinematic brand storytelling, broadcast commercials, post-production VFX, and digital media strategy.
-                </p>
+              <div className="flex items-start gap-5">
+                <div className="w-16 h-16 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center p-2 shrink-0">
+                  <Image
+                    src="/Rf Media Production Logo.png"
+                    alt="RF Media Productions Logo"
+                    width={48}
+                    height={48}
+                    style={{ width: "auto", height: "auto" }}
+                    className="max-h-12 max-w-12 object-contain"
+                    unoptimized
+                  />
+                </div>
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest">
+                    Division 02 — Media & Content
+                  </span>
+                  <h3 className="text-2xl font-bold text-white">RF Media Productions</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
+                    Cinematic brand storytelling, broadcast commercials, post-production VFX, and digital media strategy.
+                  </p>
+                </div>
               </div>
               <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
                 <Link
@@ -135,14 +162,27 @@ export default function AboutPage() {
             </div>
 
             <div className="glass-card rounded-2xl p-8 border border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div className="space-y-2">
-                <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">
-                  Division 03 — Architecture & Interiors
-                </span>
-                <h3 className="text-2xl font-bold text-white">RF Architects</h3>
-                <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
-                  Sustainable commercial architecture, urban master planning, executive interior design, and biophilic space creation.
-                </p>
+              <div className="flex items-start gap-5">
+                <div className="w-16 h-16 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center p-2 shrink-0">
+                  <Image
+                    src="/Rf Architects white-logo.png"
+                    alt="RF Architects Logo"
+                    width={48}
+                    height={48}
+                    style={{ width: "auto", height: "auto" }}
+                    className="max-h-12 max-w-12 object-contain"
+                    unoptimized
+                  />
+                </div>
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">
+                    Division 03 — Architecture & Interiors
+                  </span>
+                  <h3 className="text-2xl font-bold text-white">RF Architects</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
+                    Sustainable commercial architecture, urban master planning, executive interior design, and biophilic space creation.
+                  </p>
+                </div>
               </div>
               <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
                 <Link

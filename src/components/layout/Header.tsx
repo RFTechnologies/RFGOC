@@ -13,6 +13,7 @@ import { Menu, X, ArrowUpRight, Shield } from "lucide-react";
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -24,9 +25,27 @@ export const Header: React.FC = () => {
       }
     };
 
+    const syncTheme = () => {
+      const nextTheme = document.documentElement.classList.contains("light") ? "light" : "dark";
+      setTheme(nextTheme);
+    };
+
+    syncTheme();
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    const observer = new MutationObserver(syncTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
+    };
   }, []);
+
+  const logoSrc = theme === "dark" ? siteConfig.logoDark : siteConfig.logoLight;
 
   return (
     <header
@@ -44,12 +63,14 @@ export const Header: React.FC = () => {
           className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-sky-400 rounded-md"
         >
           <Image
-            src={siteConfig.logo}
+            src={logoSrc}
             alt={`${siteConfig.name} Logo`}
             width={180}
-            height={48}
-            className="h-15 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+            height={80}
+            style={{ width: "auto", height: "auto" }}
+            className="max-w-[180px] max-h-[80px] object-contain group-hover:scale-105 transition-transform duration-300"
             priority
+            unoptimized
           />
         </Link>
 

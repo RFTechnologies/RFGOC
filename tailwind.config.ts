@@ -9,18 +9,32 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          DEFAULT: "#0029B4",
+          50: "#e6ecff",
+          100: "#cce0ff",
+          200: "#99baff",
+          300: "#6695ff",
+          400: "#336fff",
+          500: "#0029B4",
+          600: "#002196",
+          700: "#001a78",
+          800: "#001259",
+          900: "#000b3b",
+          950: "#000624",
+        },
         brand: {
-          50: "#f0f7ff",
-          100: "#e0effe",
-          200: "#bae0fd",
-          300: "#7cc8fb",
-          400: "#36abf7",
-          500: "#0c8ee9",
-          600: "#0270c7",
-          700: "#0359a1",
-          800: "#074c85",
-          900: "#0c406e",
-          950: "#082849",
+          50: "#e6ecff",
+          100: "#cce0ff",
+          200: "#99baff",
+          300: "#6695ff",
+          400: "#336fff",
+          500: "#0029B4",
+          600: "#002196",
+          700: "#001a78",
+          800: "#001259",
+          900: "#000b3b",
+          950: "#000624",
         },
         dark: {
           base: "#07090E",
@@ -31,8 +45,8 @@ const config: Config = {
           "border-strong": "rgba(255, 255, 255, 0.16)",
         },
         group: {
-          accent: "#38BDF8", // Refined Ice Cyan Accent
-          secondary: "#818CF8", // Platinum Slate Accent
+          accent: "#0029B4", // Corporate Primary Blue Accent
+          secondary: "#3B82F6",
           silver: "#94A3B8",
         },
       },

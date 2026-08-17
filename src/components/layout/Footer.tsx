@@ -55,7 +55,8 @@ export const Footer: React.FC = () => {
                 alt={`${siteConfig.name} Logo`}
                 width={160}
                 height={44}
-                className="h-9 w-auto object-contain group-hover:opacity-90 transition-opacity"
+                style={{ width: "auto", height: "auto" }}
+                className="max-h-9 max-w-[160px] object-contain group-hover:opacity-90 transition-opacity"
               />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
