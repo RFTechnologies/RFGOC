@@ -3,7 +3,7 @@ import { PortfolioProject } from "@/types";
 export const portfolioProjects: PortfolioProject[] = [
   {
     id: "eazyticks",
-    name: "eazyticks",
+    name: "Eazyticks",
     companySlug: "technologies",
     summary:
       "Next-generation online e-ticketing platform and event management SaaS offering seamless event creation, low transaction fees, and instant ticket processing.",
@@ -25,7 +25,7 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: "spotlyy",
-    name: "spotlyy",
+    name: "Spotlyy",
     companySlug: "technologies",
     summary:
       "Location-based discovery system and mobile application delivering real-time event mapping, local venue recommendations, and interactive community engagement.",

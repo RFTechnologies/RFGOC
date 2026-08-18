@@ -12,7 +12,6 @@ import {
   Layers,
   Globe2,
   ArrowUpRight,
-  Sparkles,
   Award,
   CheckCircle2,
 } from "lucide-react";
@@ -23,11 +22,20 @@ export default function HomePage() {
   return (
     <div className="w-full flex flex-col space-y-0">
       {/* 1. HERO SECTION (Brief §3: Parent Group Identity) */}
-      <SectionWrapper size="lg" hasGridBg className="pt-28 pb-20 md:pt-36 md:pb-32">
-        <div className="flex flex-col items-center text-center space-y-8 max-w-4xl mx-auto">
+      <SectionWrapper size="lg" hasGridBg className="pt-28 pb-20 md:pt-36 md:pb-32 relative overflow-hidden">
+        {/* Background Big Logo Watermark */}
+        <div className="absolute inset-0 flex items-start justify-start pointer-events-none z-0 select-none overflow-hidden">
+          <img
+            src="/RFGOC Hollow.svg"
+            alt="RF Group Background Logo"
+            className="w-[500px] sm:w-[500px] md:w-[700px] lg:w-[900px] max-w-none opacity-15 dark:opacity-5 transform -translate-y-4 pointer-events-none transition-opacity"
+          />
+        </div>
+
+        <div className="flex flex-col items-center text-center space-y-8 max-w-4xl mx-auto relative z-10">
           {/* Corporate Group Identity Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-sky-300 text-xs font-semibold uppercase tracking-widest backdrop-blur-md shadow-inner">
-            <Sparkles className="w-3.5 h-3.5 text-sky-400" />
+            <img src="/RF.svg" alt="RF" className="w-3.5 h-3.5" />
             <span>RF GROUP OF COMPANIES</span>
           </div>
 
@@ -39,7 +47,7 @@ export default function HomePage() {
 
           {/* Group Story Placeholder Subtitle */}
           <p className="text-slate-300 text-base md:text-xl max-w-2xl font-normal leading-relaxed">
-            [PLACEHOLDER: RF Group of Companies provides strategic leadership, governance, and capital to domain-focused operating companies driving innovation in software, visual media, and architecture.]
+            RF Group of Companies provides strategic leadership, governance, and capital to domain-focused operating companies driving innovation in software, visual media, and architecture.
           </p>
 
           {/* Hero CTAs */}
@@ -88,14 +96,14 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 space-y-6">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-sky-400">
-              <Shield className="w-4 h-4" />
+              <img src="/RF.svg" alt="RF" className="w-3.5 h-3.5" />
               <span>About RF Group</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
               Building Sustainable Businesses & Quality Solutions
             </h2>
             <p className="text-slate-300 text-sm md:text-base leading-relaxed">
-              [PLACEHOLDER: RF Group of Companies unites specialized operating businesses under a shared commitment to quality and execution. We focus on establishing long-term value, backing autonomous domain teams, and building scalable platforms across Technology, Media Productions, and Architectural Design.]
+              RF Group of Companies unites specialized operating businesses under a shared commitment to quality and execution. We focus on establishing long-term value, backing autonomous domain teams, and building scalable platforms across Technology, Media Productions, and Architectural Design.
             </p>
             <div className="pt-2">
               <Link
@@ -168,7 +176,7 @@ export default function HomePage() {
             Building Companies, Products & Long-Term Value Through Technology, Creativity & Execution
           </h2>
           <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-            [PLACEHOLDER: At RF Group of Companies, we believe that durable success is built through disciplined execution and technical precision. We invest in high-performing teams, foster innovation across digital products and physical environments, and maintain corporate governance standards that support continuous growth.]
+            At RF Group of Companies, we believe that durable success is built through disciplined execution and technical precision. We invest in high-performing teams, foster innovation across digital products and physical environments, and maintain corporate governance standards that support continuous growth.
           </p>
         </div>
       </SectionWrapper>

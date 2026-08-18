@@ -243,7 +243,7 @@ export default async function CompanyPage({ params }: PageProps) {
                   High-Performance E-Commerce & Merchant Infrastructure
                 </h2>
                 <p className="text-slate-400 text-sm max-w-2xl">
-                  [PLACEHOLDER: Comprehensive Shopify engineering capabilities structured to build, extend, and operate enterprise-scale commerce systems.]
+                  Comprehensive Shopify engineering capabilities structured to build, extend, and operate enterprise-scale commerce systems.
                 </p>
               </div>
 
@@ -334,7 +334,7 @@ export default async function CompanyPage({ params }: PageProps) {
                 </span>
                 <h3 className="text-2xl font-bold text-white">Miles & Meals</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  [PLACEHOLDER: An original travel and culinary content production series showcasing culinary cultures, destination storytelling, and high-impact visual cinematography.]
+                  An original travel and culinary content production series showcasing culinary cultures, destination storytelling, and high-impact visual cinematography.
                 </p>
               </div>
               <div className="lg:col-span-5 p-6 rounded-xl bg-white/[0.02] border border-white/10 space-y-3 text-xs text-slate-400">
@@ -441,7 +441,7 @@ export default async function CompanyPage({ params }: PageProps) {
                     </h3>
                     <p className="text-slate-400 text-xs leading-relaxed">{cs.summary}</p>
                   </div>
-                  
+
                   {cs.link && (
                     <div className="pt-3 border-t border-white/10 flex items-center justify-between">
                       <span className="text-[11px] font-mono text-slate-400">
