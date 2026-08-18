@@ -20,18 +20,18 @@ export default function HomePage() {
   const selectedPortfolio = portfolioProjects.slice(0, 6);
 
   return (
-    <div className="w-full flex flex-col space-y-0">
-      {/* 1. HERO SECTION (Brief §3: Parent Group Identity) */}
-      <SectionWrapper size="lg" hasGridBg className="pt-28 pb-20 md:pt-36 md:pb-32 relative overflow-hidden">
-        {/* Background Big Logo Watermark */}
-        <div className="absolute inset-0 flex items-start justify-start pointer-events-none z-0 select-none overflow-hidden">
-          <img
-            src="/RFGOC Hollow.svg"
-            alt="RF Group Background Logo"
-            className="w-[500px] sm:w-[500px] md:w-[700px] lg:w-[900px] max-w-none opacity-15 dark:opacity-5 transform -translate-y-4 pointer-events-none transition-opacity"
-          />
-        </div>
+    <div className="relative w-full flex flex-col space-y-0 overflow-hidden">
+      {/* Background Big Logo Watermark on Main Container */}
+      <div className="absolute top-0 left-0 pointer-events-none z-0 select-none overflow-hidden">
+        <img
+          src="/RFGOC Hollow.svg"
+          alt="RF Group Background Logo"
+          className="w-[400px] sm:w-[400px] md:w-[600px] lg:w-[800px] max-w-none opacity-12 dark:opacity-12 transform -translate-y-0 pointer-events-none transition-opacity"
+        />
+      </div>
 
+      {/* 1. HERO SECTION (Brief §3: Parent Group Identity) */}
+      <SectionWrapper size="lg" hasGridBg className="pt-28 pb-20 md:pt-36 md:pb-32">
         <div className="flex flex-col items-center text-center space-y-8 max-w-4xl mx-auto relative z-10">
           {/* Corporate Group Identity Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-sky-300 text-xs font-semibold uppercase tracking-widest backdrop-blur-md shadow-inner">
