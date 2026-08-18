@@ -156,16 +156,6 @@ export const Header: React.FC = () => {
               );
             })}
           </nav>
-          <div className="pt-2 border-t border-slate-200 dark:border-white/10">
-            <Link
-              href="/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-bold uppercase tracking-wider bg-[#0029B4] hover:bg-blue-800 text-white dark:bg-gradient-to-r dark:from-sky-400 dark:to-indigo-500 dark:text-slate-950 shadow-md"
-            >
-              Get In Touch
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
         </div>
       )}
     </header>
