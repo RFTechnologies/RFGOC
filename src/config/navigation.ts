@@ -30,7 +30,7 @@ export const footerNavConfig: FooterNavConfig = {
   subsidiaries: [
     { label: "RF Technologies", href: "https://rftechnologies.com.pk", isExternal: true },
     { label: "RF Media Productions", href: "https://rfmediaproductions.com", isExternal: true },
-    { label: "RF Architects", href: "https://rf-architects.vercel.app/", isExternal: true },
+    { label: "RF Architects", href: "https://rfarchitects.design/", isExternal: true },
   ],
   legal: [
     { label: "Privacy Policy", href: "#" },

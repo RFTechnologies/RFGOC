@@ -43,7 +43,7 @@ export const CompanyCard: React.FC<CompanyCardProps> = ({ company, index }) => {
                 style={{ width: "auto", height: "auto" }}
                 className={cn(
                   "max-h-12 w-auto max-w-[160px] object-contain group-hover:scale-105 transition-transform duration-300",
-                  company.slug === "architects" && "dark:invert"
+                  company.slug === "architects"
                 )}
                 unoptimized
               />

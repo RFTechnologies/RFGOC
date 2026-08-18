@@ -28,7 +28,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Integrated spatial planning, biophilic indoor environments, and LEED-certified energy modeling for modern commercial towers.",
     body: "RF Architects conceptualized a state-of-the-art corporate complex incorporating parametric solar shading, high-efficiency building envelopes, and biophilic executive office interiors.",
-    link: "https://rf-architects.vercel.app/",
+    link: "https://rfarchitects.design/",
     status: "approved",
   },
 ];

@@ -14,6 +14,7 @@ import {
   ArrowUpRight,
   Award,
   CheckCircle2,
+  Network,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -225,7 +226,8 @@ export default function HomePage() {
               Submit your project details or strategic inquiry directly. You can select the specific subsidiary company or contact the group board for general partnerships.
             </p>
             <div className="p-6 rounded-2xl glass-card border border-white/10 space-y-3">
-              <span className="text-xs font-semibold text-slate-300 uppercase tracking-wider block">
+              <span className="text-xs font-semibold text-slate-300 uppercase tracking-wider flex items-center gap-2">
+                <Network className="w-4 h-4 text-sky-400" />
                 Corporate Routing
               </span>
               <p className="text-slate-400 text-xs leading-relaxed">

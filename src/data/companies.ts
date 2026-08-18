@@ -86,7 +86,7 @@ export const companies: Company[] = [
     logoUrl: "/Rf Architects dark-logo.png",
     logoDark: "/Rf Architects white-logo.png",
     logoLight: "/Rf Architects dark-logo.png",
-    websiteUrl: "https://rf-architects.vercel.app/",
+    websiteUrl: "https://rfarchitects.design/",
     cardDescription:
       "Creating visionary spatial design, sustainable commercial architecture, master planning, and luxury interior environments.",
     heroDescription:

@@ -122,7 +122,7 @@ export default async function CompanyPage({ params }: PageProps) {
                     style={{ width: "auto", height: "auto" }}
                     className={cn(
                       "max-h-14 max-w-14 object-contain",
-                      company.slug === "architects" && "dark:invert"
+                      company.slug === "architects"
                     )}
                     priority
                     unoptimized

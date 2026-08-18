@@ -170,7 +170,7 @@ export default function AboutPage() {
                     width={48}
                     height={48}
                     style={{ width: "auto", height: "auto" }}
-                    className="max-h-12 max-w-12 object-contain dark:invert"
+                    className="max-h-12 max-w-12 object-contain"
                     unoptimized
                   />
                 </div>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                   View Division <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
                 <a
-                  href="https://rf-architects.vercel.app/"
+                  href="https://rfarchitects.design/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-full border border-emerald-400/40 hover:bg-emerald-400/10 text-emerald-300 text-xs font-semibold uppercase tracking-wider transition-colors inline-flex items-center gap-1.5"
