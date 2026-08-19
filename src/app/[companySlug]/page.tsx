@@ -162,7 +162,7 @@ export default async function CompanyPage({ params }: PageProps) {
                   href={company.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-full border border-sky-400/50 hover:bg-sky-400/10 text-sky-300 font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-colors"
+                  className="px-6 py-3 rounded-full border border-[#0029B4]/50 hover:bg-[#0029B4]/10 text-[#0029B4] dark:text-sky-300 font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-colors"
                 >
                   Visit Official Website
                   <ArrowUpRight className="w-4 h-4" />
