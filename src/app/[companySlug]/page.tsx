@@ -152,7 +152,7 @@ export default async function CompanyPage({ params }: PageProps) {
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <Link
                 href="#contact-division"
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-300 hover:to-indigo-400 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-sky-400/20 flex items-center gap-2"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-[#0029B4] to-blue-500 hover:bg-blue-800 text-white dark:bg-gradient-to-r dark:from-sky-400 dark:to-indigo-500 dark:text-slate-950 dark:hover:from-sky-300 dark:hover:to-indigo-400 font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-900/20 dark:shadow-sky-400/20 flex items-center gap-2"
               >
                 {company.contactCtaLabel}
                 <ArrowUpRight className="w-4 h-4" />

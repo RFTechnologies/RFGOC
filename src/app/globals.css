@@ -208,16 +208,20 @@ html:not(.dark) .border-sky-500\/40 {
   border-color: rgba(0, 41, 180, 0.25) !important;
 }
 
-html:not(.dark) .from-sky-400,
-html:not(.dark) .from-sky-500 {
-  --tw-gradient-from: #0029B4 var(--tw-gradient-from-position) !important;
-  --tw-gradient-to: rgba(0, 41, 180, 0) var(--tw-gradient-to-position) !important;
-  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-from), var(--tw-gradient-to)) !important;
+html:not(.dark) .from-sky-400 {
+  --tw-gradient-from: #0029B4 !important;
 }
 
-html:not(.dark) .to-indigo-500,
-html:not(.dark) .to-blue-600 {
-  --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position) !important;
+html:not(.dark) .from-sky-500 {
+  --tw-gradient-from: #0029B4 !important;
+}
+
+html:not(.dark) .to-indigo-500 {
+  --tw-gradient-to: #1d4ed8 !important;
+}
+
+html:not(.dark) .bg-gradient-to-r.from-sky-400 {
+  background-image: linear-gradient(to right, #0029B4, #1d4ed8) !important;
 }
 
 html:not(.dark) .shadow-sky-400\/20,
