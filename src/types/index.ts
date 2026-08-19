@@ -14,6 +14,7 @@ export type PortfolioProject = {
   imageUrl: string;
   category: string;
   link?: string;
+  embedUrl?: string;
   status: ContentStatus;
 };
 

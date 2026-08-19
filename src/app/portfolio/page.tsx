@@ -48,7 +48,7 @@ export default function PortfolioPage() {
               className={cn(
                 "px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer",
                 activeTab === tab.id
-                  ? "bg-sky-400 text-slate-950 shadow-md shadow-sky-400/20"
+                  ? "bg-sky-400 text-white shadow-md shadow-sky-400/20"
                   : "glass-panel text-slate-300 hover:text-white hover:bg-white/10"
               )}
             >

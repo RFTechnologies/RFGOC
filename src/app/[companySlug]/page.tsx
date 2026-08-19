@@ -152,7 +152,7 @@ export default async function CompanyPage({ params }: PageProps) {
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <Link
                 href="#contact-division"
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-300 hover:to-indigo-400 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-sky-400/20 flex items-center gap-2"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-300 hover:to-indigo-400 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-sky-400/20 flex items-center gap-2"
               >
                 {company.contactCtaLabel}
                 <ArrowUpRight className="w-4 h-4" />
@@ -378,6 +378,77 @@ export default async function CompanyPage({ params }: PageProps) {
                 <p className="text-slate-400 text-xs leading-relaxed">
                   LEED/BREEAM aligned net-zero design, solar integration, and low-carbon structural engineering.
                 </p>
+              </div>
+            </div>
+
+            {/* Interactive 3D Architectural Models & Walkthroughs Grid */}
+            <div className="pt-8 border-t border-white/10 space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold uppercase tracking-widest text-emerald-400">
+                    Interactive 3D Architectural Models
+                  </span>
+                  <h3 className="text-xl font-bold text-white">Real-Time Spatial 3D Walkthroughs</h3>
+                </div>
+                <span className="text-xs text-slate-400 font-mono">
+                  3d.rfarchitects.design
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="glass-card rounded-2xl p-4 border border-emerald-500/20 space-y-3">
+                  <div className="w-full h-72 rounded-xl overflow-hidden bg-slate-950 border border-white/10 relative">
+                    <iframe
+                      src="https://3d.rfarchitects.design/embed/6a54f0dfe9d69e4a72411726"
+                      title="RF Architects 3D Model 1"
+                      className="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <h4 className="text-base font-bold text-white">Architectural Spatial Model 01</h4>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      Interactive 360° 3D spatial visualization featuring structural geometry and interior design.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="glass-card rounded-2xl p-4 border border-emerald-500/20 space-y-3">
+                  <div className="w-full h-72 rounded-xl overflow-hidden bg-slate-950 border border-white/10 relative">
+                    <iframe
+                      src="https://3d.rfarchitects.design/embed/6a6b17c4b9d418259f8031f3"
+                      title="RF Architects 3D Model 2"
+                      className="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <h4 className="text-base font-bold text-white">Commercial & Interior 3D Concept</h4>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      360° architectural walkthrough demonstrating spatial layout and biophilic planning.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="glass-card rounded-2xl p-4 border border-emerald-500/20 space-y-3">
+                  <div className="w-full h-72 rounded-xl overflow-hidden bg-slate-950 border border-white/10 relative">
+                    <iframe
+                      src="https://3d.rfarchitects.design/embed/6a54e27b3695efdb5a3efcb0"
+                      title="RF Architects 3D Model 3"
+                      className="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <h4 className="text-base font-bold text-white">Luxury Residence 3D Masterplan</h4>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      Immersive 3D architectural visualization with real-time spatial navigation.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -31,7 +31,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Location-based discovery system and mobile application delivering real-time event mapping, local venue recommendations, and interactive community engagement.",
     imageUrl: "/projects/spotly.png",
     category: "Social & Event Discovery",
-    link: "https://dev-website.spotlyy.com/",
+    link: "https://spotlyy.com/",
     status: "approved",
   },
   {
@@ -57,13 +57,39 @@ export const portfolioProjects: PortfolioProject[] = [
     status: "approved",
   },
   {
-    id: "waterfront-masterplan",
-    name: "Waterfront Commercial Campus",
+    id: "architects-3d-model-1",
+    name: "Architectural Spatial Model",
     companySlug: "architects",
     summary:
-      "Sustainable mixed-use commercial headquarters featuring biophilic spatial planning, energy-efficient building envelopes, and executive interiors.",
+      "Interactive 360° 3D architectural model featuring structural planning, spatial geometry, and biophilic interior design.",
     imageUrl: "/projects/waterfront-campus.png",
-    category: "Commercial Architecture",
+    category: "Interactive 3D Model",
+    link: "https://3d.rfarchitects.design/embed/6a54f0dfe9d69e4a72411726",
+    embedUrl: "https://3d.rfarchitects.design/embed/6a54f0dfe9d69e4a72411726",
+    status: "approved",
+  },
+  {
+    id: "architects-3d-model-2",
+    name: "Commercial & Interior 3D Concept",
+    companySlug: "architects",
+    summary:
+      "360° architectural spatial walkthrough demonstrating executive workplace planning, lighting design, and low-carbon envelopes.",
+    imageUrl: "/projects/waterfront-campus.png",
+    category: "3D Spatial Design",
+    link: "https://3d.rfarchitects.design/embed/6a6b17c4b9d418259f8031f3",
+    embedUrl: "https://3d.rfarchitects.design/embed/6a6b17c4b9d418259f8031f3",
+    status: "approved",
+  },
+  {
+    id: "architects-3d-model-3",
+    name: "Luxury Residence 3D Masterplan",
+    companySlug: "architects",
+    summary:
+      "Immersive 3D architectural visualization providing real-time spatial navigation and detailed material exploration.",
+    imageUrl: "/projects/waterfront-campus.png",
+    category: "3D Walkthrough",
+    link: "https://3d.rfarchitects.design/embed/6a54e27b3695efdb5a3efcb0",
+    embedUrl: "https://3d.rfarchitects.design/embed/6a54e27b3695efdb5a3efcb0",
     status: "approved",
   },
 ];

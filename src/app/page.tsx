@@ -58,7 +58,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
             <Link
               href="#companies"
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-300 hover:to-indigo-400 text-slate-950 font-bold text-sm uppercase tracking-wider transition-all shadow-lg shadow-sky-500/25 flex items-center justify-center gap-2 hover:scale-[1.02]"
+              className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-300 hover:to-indigo-400 text-white font-bold text-sm uppercase tracking-wider transition-all shadow-lg shadow-sky-500/25 flex items-center justify-center gap-2 hover:scale-[1.02]"
             >
               Explore Our Companies
               <ArrowRight className="w-4 h-4" />

@@ -53,10 +53,15 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
         {/* Top Badges */}
         <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
-          <span className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-slate-950/80 text-sky-300 backdrop-blur-md border border-white/10">
+          <span className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-slate-950/80 !text-white backdrop-blur-md border border-white/10">
             {project.category}
           </span>
-          {project.link ? (
+          {project.embedUrl ? (
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 backdrop-blur-md shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              3D Walkthrough
+            </span>
+          ) : project.link ? (
             <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 backdrop-blur-md shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Live Site
@@ -91,7 +96,12 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
               ? new URL(project.link).hostname.replace("www.", "")
               : "Case Study Ready"}
           </span>
-          {project.link ? (
+          {project.embedUrl ? (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 group-hover:bg-emerald-500/20 text-xs font-semibold text-emerald-300 transition-all">
+              Explore 3D Model
+              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </span>
+          ) : project.link ? (
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 group-hover:bg-sky-500/20 text-xs font-semibold text-sky-300 transition-all">
               Visit Project
               <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

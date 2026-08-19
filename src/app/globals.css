@@ -170,6 +170,29 @@ html:not(.dark) .bg-sky-600 {
   color: #ffffff !important;
 }
 
+/* Force all buttons, CTA links, and active filters with blue backgrounds/gradients to have pure white text in Light Mode */
+html:not(.dark) button[class*="bg-sky"],
+html:not(.dark) a[class*="bg-sky"],
+html:not(.dark) button[class*="from-sky"],
+html:not(.dark) a[class*="from-sky"],
+html:not(.dark) button[class*="bg-[#0029B4]"],
+html:not(.dark) a[class*="bg-[#0029B4]"],
+html:not(.dark) button[class*="from-[#0029B4]"],
+html:not(.dark) a[class*="from-[#0029B4]"] {
+  color: #ffffff !important;
+}
+
+html:not(.dark) button[class*="bg-sky"] *,
+html:not(.dark) a[class*="bg-sky"] *,
+html:not(.dark) button[class*="from-sky"] *,
+html:not(.dark) a[class*="from-sky"] *,
+html:not(.dark) button[class*="bg-[#0029B4]"] *,
+html:not(.dark) a[class*="bg-[#0029B4]"] *,
+html:not(.dark) button[class*="from-[#0029B4]"] *,
+html:not(.dark) a[class*="from-[#0029B4]"] * {
+  color: #ffffff !important;
+}
+
 html:not(.dark) .bg-sky-500\/10,
 html:not(.dark) .bg-sky-500\/15,
 html:not(.dark) .bg-sky-500\/20,
