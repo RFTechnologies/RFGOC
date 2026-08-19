@@ -72,7 +72,7 @@ export const CeoFloatingQuoteCard: React.FC = () => {
 
       {/* Immediate Attribution Block */}
       <div className="pt-3 border-t border-white/20 flex items-center gap-3 relative z-10">
-        <div className="relative w-9 h-9 rounded-full bg-white/20 border border-white/30 flex items-center justify-center shrink-0 shadow-sm overflow-hidden">
+        {/* <div className="relative w-9 h-9 rounded-full bg-white/20 border border-white/30 flex items-center justify-center shrink-0 shadow-sm overflow-hidden">
           <Image
             src="/CEO Photos.jpeg"
             alt="R. Farhan"
@@ -80,7 +80,12 @@ export const CeoFloatingQuoteCard: React.FC = () => {
             className="object-cover object-top"
             sizes="36px"
           />
-        </div>
+        </div> */}
+        <div className="relative w-11 h-11 rounded-full border-2 border-sky-500/40 bg-slate-900 flex items-center justify-center shrink-0 shadow-lg shadow-sky-500/20">
+  <span className="text-md sm:text-lg font-bold tracking-tight text-sky-400">
+    RF
+  </span>
+</div>
 
         <div className="flex flex-col space-y-0.5">
           <span className="text-[12px] font-bold text-white leading-tight">

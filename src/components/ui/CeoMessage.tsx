@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { Quote } from "lucide-react";
 
@@ -47,7 +47,7 @@ export const CeoMessage: React.FC = () => {
         <div className="lg:col-span-4 flex flex-col items-start lg:items-center justify-center pt-6 lg:pt-0 border-t lg:border-t-0 lg:border-l border-white/10 lg:pl-12">
           <div className="flex flex-row lg:flex-col items-center gap-5 text-left lg:text-center glass-card p-6 md:p-8 rounded-2xl border border-white/10 w-full max-w-sm">
             {/* Circular Photo */}
-            <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-sky-500/40 bg-slate-900 flex items-center justify-center shrink-0 shadow-lg shadow-sky-500/20 group overflow-hidden">
+            {/* <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-sky-500/40 bg-slate-900 flex items-center justify-center shrink-0 shadow-lg shadow-sky-500/20 group overflow-hidden">
               <Image
                 src="/CEO Photos.jpeg"
                 alt="R. Farhan - Founder & CEO"
@@ -55,7 +55,12 @@ export const CeoMessage: React.FC = () => {
                 className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 80px, 96px"
               />
-            </div>
+            </div> */}
+            <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-sky-500/40 bg-slate-900 flex items-center justify-center shrink-0 shadow-lg shadow-sky-500/20">
+  <span className="text-2xl sm:text-3xl font-bold tracking-tight text-sky-400">
+    RF
+  </span>
+</div>
 
             {/* Name & Title */}
             <div className="space-y-1">
