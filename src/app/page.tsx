@@ -4,6 +4,9 @@ import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { CompanyCard } from "@/components/ui/CompanyCard";
 import { PortfolioCard } from "@/components/ui/PortfolioCard";
 import { ContactForm } from "@/components/ui/ContactForm";
+import { CeoMessage } from "@/components/ui/CeoMessage";
+import { CeoQuoteDivider } from "@/components/ui/CeoQuoteDivider";
+import { CeoFloatingQuoteCard } from "@/components/ui/CeoFloatingQuoteCard";
 import { companies } from "@/data/companies";
 import { portfolioProjects } from "@/data/portfolio";
 import {
@@ -166,6 +169,16 @@ export default function HomePage() {
           </div>
         </div>
       </SectionWrapper>
+
+      {/* FLOATING CEO QUOTE CARD (Positioned at seam between Our Companies and CEO Message) */}
+      <div className="container-custom relative z-30 pointer-events-none">
+        <div className="flex justify-center md:justify-start -mt-10 md:-mt-24 mb-6 md:-mb-14 pointer-events-auto">
+          <CeoFloatingQuoteCard />
+        </div>
+      </div>
+
+      {/* 4. MESSAGE FROM THE CEO */}
+      <CeoMessage />
 
       {/* 4. GROUP VISION / PHILOSOPHY (Brief §3: Group Vision & Values) */}
       <SectionWrapper size="md" className="bg-[#0B0F19]/90 border-y border-white/10">

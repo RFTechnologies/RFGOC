@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --color-primary: #0029B4;
   --bg-primary: #f8fafc;
@@ -254,3 +255,99 @@ html:not(.dark) .group:hover .group-hover\:text-sky-400 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Continuous Gold Shimmer Gradient Text Effect */
+@keyframes gold-shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.gold-shimmer-text {
+  background: linear-gradient(90deg, #8a6a1f 0%, #f5d576 20%, #fff3c4 40%, #d4a437 60%, #f5d576 80%, #8a6a1f 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gold-shimmer 4.5s linear infinite;
+}
+
+/* Typewriter Blinking Cursor Animation */
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  animation: cursor-blink 0.8s step-end infinite;
+}
+
+/* Floating Bobbing & Subtle Shaking Animation for CEO Glass Card */
+@keyframes float-bob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(0.6deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(-0.6deg);
+  }
+  75% {
+    transform: translateY(-9px) rotate(0.4deg);
+  }
+}
+
+.animate-float-card {
+  animation: float-bob 5s ease-in-out infinite;
+}
+
+/* Continuous Shiny Glass Sheen Sweep Effect */
+@keyframes glass-sheen-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+  }
+  45%, 100% {
+    transform: translateX(250%) skewX(-25deg);
+  }
+}
+
+.glass-sheen-overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glass-sheen-overlay::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 20%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.05) 80%,
+    transparent 100%
+  );
+  transform: translateX(-150%) skewX(-25deg);
+  animation: glass-sheen-sweep 3.5s ease-in-out infinite;
+}
+
