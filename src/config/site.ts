@@ -4,7 +4,7 @@ export const siteConfig = {
   logoDark: "/RF Group Logo Dark mode.png",
   logoLight: "/RF Group Logo light mode.png",
   logo: "/RF Group Logo Dark mode.png",
-  favicon: "/icon.png",
+  favicon: "/icon.svg",
   domain: "rfgroupofcompanies.com",
   url: "https://rfgroupofcompanies.com",
   description:
