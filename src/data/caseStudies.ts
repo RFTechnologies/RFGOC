@@ -18,7 +18,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Full-scope film production, 4K multi-camera cinematography, sound engineering, and post-production color grading.",
     body: "RF Media Productions directed end-to-end filming and post-production for original digital series including Miles & Meals, managing location scouting, cinematic storytelling, and digital content distribution.",
-    link: "https://mealsandmiles.com/",
+    link: "https://youtube.com/mealsandmiles",
     status: "approved",
   },
   {

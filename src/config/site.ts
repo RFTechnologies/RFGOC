@@ -13,6 +13,17 @@ export const siteConfig = {
   contactPhone: "+92 349 6238506",
   whatsappUrl: "https://wa.me/923496238506",
   mainOffice: "Al-Rizq Plaza, Office No. 1, Plaza No. 79, Wallayat Complex, Bahria Phase 7, Rawalpindi",
+  usaOffice: "7126 Antioch Rd, Baton Rouge, LA 70817",
+  offices: [
+    {
+      label: "Headquarters Address (Pakistan)",
+      address: "Al-Rizq Plaza, Office No. 1, Plaza No. 79, Wallayat Complex, Bahria Phase 7, Rawalpindi",
+    },
+    {
+      label: "USA Office Address",
+      address: "7126 Antioch Rd, Baton Rouge, LA 70817",
+    },
+  ],
   copyright: `© ${new Date().getFullYear()} RF Group of Companies. All rights reserved.`,
   socialLinks: {
     linkedin: "https://linkedin.com",

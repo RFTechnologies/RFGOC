@@ -191,17 +191,22 @@ export const Footer: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5 p-3 rounded-xl bg-white dark:bg-white/[0.03] border border-gray-200 dark:border-white/5 shadow-sm">
-                <MapPin className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
-                <div>
-                  <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-500 dark:text-slate-400 block">
-                    Headquarters Address
-                  </span>
-                  <span className="text-[11px] font-semibold text-gray-900 dark:text-slate-200 leading-relaxed block">
-                    {siteConfig.mainOffice}
-                  </span>
+              {siteConfig.offices.map((office) => (
+                <div
+                  key={office.label}
+                  className="flex items-start gap-2.5 p-3 rounded-xl bg-white dark:bg-white/[0.03] border border-gray-200 dark:border-white/5 shadow-sm"
+                >
+                  <MapPin className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-500 dark:text-slate-400 block">
+                      {office.label}
+                    </span>
+                    <span className="text-[11px] font-semibold text-gray-900 dark:text-slate-200 leading-relaxed block">
+                      {office.address}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

@@ -53,7 +53,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Original travel and culinary media production series capturing cinematic explorations of regional food cultures, chef stories, and local traditions.",
     imageUrl: "/projects/miles-and-meals.png",
     category: "Travel & Food Media Series",
-    link: "https://mealsandmiles.com/",
+    link: "https://youtube.com/mealsandmiles",
     status: "approved",
   },
   {

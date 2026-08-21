@@ -75,19 +75,24 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="glass-card bg-white dark:bg-[#161e2b] rounded-xl p-5 border border-slate-200 dark:border-white/10 flex items-start gap-4 shadow-sm dark:shadow-none">
-                <div className="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5" />
+              {siteConfig.offices.map((office) => (
+                <div
+                  key={office.label}
+                  className="glass-card bg-white dark:bg-[#161e2b] rounded-xl p-5 border border-slate-200 dark:border-white/10 flex items-start gap-4 shadow-sm dark:shadow-none"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider block">
+                      {office.label}
+                    </span>
+                    <span className="text-xs font-bold text-slate-900 dark:text-white leading-relaxed block">
+                      {office.address}
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider block">
-                    Headquarters Office Address
-                  </span>
-                  <span className="text-xs font-bold text-slate-900 dark:text-white leading-relaxed block">
-                    {siteConfig.mainOffice}
-                  </span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
